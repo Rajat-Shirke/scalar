@@ -19,9 +19,13 @@ public class Main {
 //        a.solve(ar);
 
         //dp d = new dp();
-        Recursion r = new Recursion();
-        int[] ar = new int[]{1,4,10,2,1,5};
-        r.solve(ar);
+//        Recursion r = new Recursion();
+//        int[] ar = new int[]{1,4,10,2,1,5};
+//        r.solve(ar);
+
+
+        longestPalindrome l = new longestPalindrome();
+         l.longestPalindrome("aba");
 
     }
 }
