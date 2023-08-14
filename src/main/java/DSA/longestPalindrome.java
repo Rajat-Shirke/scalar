@@ -86,7 +86,7 @@ public class longestPalindrome {
     public int minCut(String A) {
         inputLen = A.length();
         newCut(A);
-        return result;
+        return result-1;
     }
     int result=0;
 
@@ -95,11 +95,13 @@ public class longestPalindrome {
 
 
         if (start == end) {
+            result++;
             return;
         }
         List<Integer> startAndEndIndex = longPalindrome(A);
-        if((startAndEndIndex.get(1)-startAndEndIndex.get(0)+1)==inputLen)
+        if((startAndEndIndex.get(1)-startAndEndIndex.get(0)+1)==A.length())
         {
+            result++;
             return;
         }
 
@@ -107,7 +109,7 @@ public class longestPalindrome {
         if (startAndEndIndex.get(0) > 0) {
             newCut(A.substring(start, startAndEndIndex.get(0)));
         }
-        if (startAndEndIndex.get(1) < inputLen - 1)
+        if (startAndEndIndex.get(1) < A.length() - 1)
             newCut(A.substring(startAndEndIndex.get(1)+1, end+1));
 
 
