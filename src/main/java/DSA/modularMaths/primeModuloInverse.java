@@ -1,4 +1,4 @@
-package DSA;
+package DSA.modularMaths;
 
 public class primeModuloInverse {
     public int solve(int A, int B) {

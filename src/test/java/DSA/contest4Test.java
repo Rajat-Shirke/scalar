@@ -1,4 +1,4 @@
-//package test.java.DSA;
+//package DSA;
 //
 //import main.java.DSA.contest4;
 //import org.junit.Test;
