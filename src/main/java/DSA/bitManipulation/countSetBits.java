@@ -1,7 +1,7 @@
 package DSA.bitManipulation;
 
 public class countSetBits {
-    public int[] countBits(int n) {
+    public int[] CountBits(int n) {
         int[] res = new int[n + 1];
         for (int i = 0; i <= n; i++) {
             int c = 0;
@@ -15,4 +15,5 @@ public class countSetBits {
         }
         return res;
     }
+
 }

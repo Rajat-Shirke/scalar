@@ -1,5 +1,7 @@
 package DSA;
 
+import DSA.linkedList.ListNode;
+
 public class Advanced_LinkedList {
     public int solve(ListNode A) {
         int count = size(A);
@@ -26,9 +28,4 @@ public class Advanced_LinkedList {
         return c;
     }
 }
-class ListNode {
-     public int val;
-     public ListNode next;
-     ListNode(int x) { val = x; next = null; }
- }
 

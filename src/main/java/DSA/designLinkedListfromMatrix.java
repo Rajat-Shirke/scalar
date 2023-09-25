@@ -1,5 +1,7 @@
 package DSA;
 
+import DSA.linkedList.ListNode;
+
 public class designLinkedListfromMatrix {
 
 static ListNode head=null;
